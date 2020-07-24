@@ -1,0 +1,92 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RolloseImpresiones</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Materialize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+     <link href="{% static 'css/materialize.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+     <link href="{% static 'css/style.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+<nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+
+        <img width="270" src="{% static 'img/Logo.png' %}">
+        <ul class="right hide-on-med-and-down">
+
+            <li><a href="{% url 'home' %}">INICIO</a></li>
+             <li><a href="{% url 'blog' %}">BLOG</a></li>
+            <li><a href="{% url 'servicios' %}">SERVICIOS</a></li>
+        </ul>
+        <ul id="nav-mobile" class="sidenav">
+            <li><a href="#">Navbar Link</a></li>
+        </ul>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+</nav>
+
+<div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+        <div class="container">
+        </div>
+    </div>
+    <div class="parallax"><img width="35" src="{% static 'img/fondo2.jpg' %}" alt="Unsplashed background img 1" style="transform: translate3d(-50%, 199.87px, 0px); opacity: 1;"></div>
+</div>
+
+<!-- Contenido -->
+
+{% block content %}
+
+{% endblock %}
+
+<footer class="page-footer orange darken-4">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">Company Bio</h5>
+                <p class="grey-text text-lighten-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;.</p>
+
+
+            </div>
+            <div class="col l3 s12">
+                <h5 class="white-text">Settings</h5>
+                <ul>
+                    <li><a class="white-text" href="#!">Link 1</a></li>
+                    <li><a class="white-text" href="#!">Link 2</a></li>
+                    <li><a class="white-text" href="#!">Link 3</a></li>
+                    <li><a class="white-text" href="#!">Link 4</a></li>
+                </ul>
+            </div>
+            <div class="col l3 s12">
+                <h5 class="white-text">Connect</h5>
+                <ul>
+                    <li><a class="white-text" href="#!">Link 1</a></li>
+                    <li><a class="white-text" href="#!">Link 2</a></li>
+                    <li><a class="white-text" href="#!">Link 3</a></li>
+                    <li><a class="white-text" href="#!">Link 4</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="{% static 'js/materialize.js' %}"></script>
+<script src="{% static 'js/init.js' %}"></script>
+<div class="sidenav-overlay"></div>
+<div class="drag-target"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>
