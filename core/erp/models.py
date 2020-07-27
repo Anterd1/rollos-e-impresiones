@@ -6,7 +6,7 @@ from datetime import datetime
 
 
 class Servicio(models.Model):
-    title = models.CharField(max_length=50)
+    title = models.CharField(max_length=70)
     content = models.TextField( )
     image = models.ImageField(upload_to='servicios')
     created = models.DateField(auto_now_add=True)
