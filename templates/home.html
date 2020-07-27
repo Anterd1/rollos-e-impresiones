@@ -9,39 +9,19 @@
 
         <!--   Icon Section   -->
         <div class="row">
+            {% for servicio in servicios %}
             <div class="col s12 m4">
+
                 <div class="icon-block">
                     <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
-                    <h5 class="center">Texto</h5>
-
-                    <p class="light">Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto
-                    Texto Texto Texto Texto Texto Texto Texto Texto
-                    Texto Texto Texto Texto Texto Texto  </p>
+                    <h5 class="center">{{ servicio.title }}</h5>
+                    <p><img width="60%" src="{{ servicio.image.url }}"></p>
+                    <p class="light">{{ servicio.content }}  </p>
                 </div>
+
             </div>
+            {% endfor %}
 
-            <div class="col s12 m4">
-                <div class="icon-block">
-                    <h2 class="center brown-text"><i class="material-icons">group</i></h2>
-                    <h5 class="center">TEXTO</h5>
-
-                    <p class="light">Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto
-                    Texto Texto Texto Texto Texto Texto Texto Texto
-                    Texto Texto Texto Texto Texto Texto </p>
-                </div>
-            </div>
-
-            <div class="col s12 m4">
-                <div class="icon-block">
-                    <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
-                    <h5 class="center">TEXTO</h5>
-
-                    <p class="light">Fer Fer Fer Fer Fer Fer Fer Fer Fer
-                        Fer Fer Fer Fer Fer Fer Fer Fer Fer Fer Fer Fer Fer Fer
-                        Fer Fer Fer Fer Fer Fer Fer Fer Fer Fer Fer
-                        .</p>
-                </div>
-            </div>
         </div>
 
     </div>

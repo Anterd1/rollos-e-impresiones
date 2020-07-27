@@ -1,10 +1,12 @@
 from django.http import HttpResponse
 from django.shortcuts import render
+from core.erp.models import Servicio
 
 
 # Create your views here.
 def Home(request):
-    return render(request, 'home.html')
+    servicios = Servicio.objects.all()
+    return render(request, 'home.html',{"servicios": servicios })
 
 def Servicios(request):
     return render(request, 'servicios.html')
