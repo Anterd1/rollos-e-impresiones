@@ -2,9 +2,25 @@
 {% load static %}
 
 {% block content %}
-    <div class="   container">
-    <div class="center-align">
-        <h2>ESTAMOS EN DESARROLLO VUELVA PRONTO</h2>
-    </div>
+
+    <div class="container">
+        <div class="center-align">
+            {% for blog in blogs %}
+                <div class="col s12 m7">
+                    <h2 class="header">{{ blog.title_post }}</h2>
+                    <div class="card horizontal">
+                        <div class="card-image">
+                            <img src="{{ blog.image.url }}">
+                        </div>
+                        <div class="card-stacked">
+                            <div class="card-content">
+                                <p>{{ blog.content }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            {% endfor %}
+        </div>
     </div>
 {% endblock %}
