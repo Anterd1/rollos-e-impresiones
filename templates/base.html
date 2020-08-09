@@ -21,21 +21,21 @@
             <li><a href="{% url 'home' %}">INICIO</a></li>
              <li><a href="{% url 'blog' %}">BLOG</a></li>
             <li><a href="{% url 'servicios' %}">SERVICIOS</a></li>
-            <li><a href="{% url 'servicios' %}">CONTACTANOS</a></li>
+            <li><a href="{% url 'contacto' %}">CONTACTANOS</a></li>
         </ul>
 
-        <ul id="nav-mobile" class="sidenav">
+        <ul id="nav-mobile" class="sidenav" >
             <li><img width="270" src="{% static '/img/Logo.png' %}"></li>
             <li><a href="{% url 'home' %}">INICIO</a></li>
              <li><a href="{% url 'blog' %}">BLOG</a></li>
             <li><a href="{% url 'servicios' %}">SERVICIOS</a></li>
-            <li><a href="{% url 'servicios' %}">CONTACTANOS</a></li>
+            <li><a href="{% url 'contacto' %}">CONTACTANOS</a></li>
         </ul>
         <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
 </nav>
 
-<div id="index-banner" class="parallax-container">
+<div id="index-banner" class=" row parallax-container">
     <div class="section no-pad-bot">
         <div class="container">
         </div>
@@ -64,8 +64,7 @@
 </div>
 <div id="modal1" class="modal">
     <div class="modal-content">
-      <h4>CONTACTO</h4>
-       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;.</p>
+        {% include 'correo.html' %}
     </div>
     <div class="modal-footer">
       <a href="#!" class="modal-close waves-effect waves-red btn-flat">Aceptar</a>

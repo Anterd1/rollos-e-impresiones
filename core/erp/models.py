@@ -34,3 +34,12 @@ class Blog(models.Model):
     def __str__(self):
         return self.title_post
 
+class Presentacion(models.Model):
+    title = models.CharField(max_length=150)
+    content = models.TextField()
+
+    class Meta:
+        verbose_name= 'presentacion'
+
+    def __str__(self):
+        return self.title

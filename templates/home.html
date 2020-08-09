@@ -1,37 +1,22 @@
 {% extends "base.html" %}
 {% load static %}
 {% block content %}
+    <div class="container">
+    <div class="row">
+         <div class="row center">
 
-
-
-<div class="container">
-    <div class="section">
-
-        <!--   Icon Section   -->
-        <div class="row">
-            {% for servicio in servicios %}
-            <div class="col s4 m12 l4">
-
-                <div class="icon-block">
-                    <h2 class="center deep-orange-text"><i class="material-icons">article</i></h2>
-                    <h5 class="center">{{ servicio.title }}</h5>
-                    <div class="center-align">
-                    <p><img width="60%" src="{{ servicio.image.url }}"></p>
-                    </div>
-                    <h5 class="light">{{ servicio.content }}  </h5>
-                </div>
-
-            </div>
-            {% endfor %}
-
+         </div>
+        <div class="col s6 m12 l6 center">
+            <iframe width="400" height="300" src="https://www.youtube.com/embed/Z9vXUSPElko" frameborder="0" allowfullscreen=""></iframe>
         </div>
+        {% for pre in presentacion %}
+            <div class="col s6 m12 l6">
+            <h4>{{ pre.title }}</h4>
+            <h6> {{ pre.content }} </h6>
+        </div>
+        {% endfor %}
 
     </div>
-</div>
-
-
-
-
-
+    </div>
 {% endblock %}
 
