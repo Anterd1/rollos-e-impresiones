@@ -37,6 +37,7 @@ class Blog(models.Model):
 class Presentacion(models.Model):
     title = models.CharField(max_length=150)
     content = models.TextField()
+    created = models.DateField(auto_now_add=True, null=True, blank=True)
 
     class Meta:
         verbose_name= 'presentacion'
