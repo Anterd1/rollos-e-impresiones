@@ -2,16 +2,29 @@
 {% load static %}
 {% block content %}
     <div class="container">
-    <div class="row">
-         <div class="row center">
+        <div class="row">
+            <div class="row center">
 
-         </div>
-        <div class="col s6 m12 l6 center">
-            <iframe width="400" height="300" src="https://www.youtube.com/embed/Z9vXUSPElko" frameborder="0" allowfullscreen=""></iframe>
+            </div>
+            <div class="col s6 m12 l6 center">
+                <iframe width="400" height="300" src="https://www.youtube.com/embed/Z9vXUSPElko" frameborder="0"
+                        allowfullscreen=""></iframe>
+            </div>
+            {% for pre in presentacion %}
+                <div class="col s6 m12 l6 center">
+                    <h4>
+                        {{ pre.title }}
+                    </h4>
+                </div>
+                <div class="col s6 m12 l6 center">
+                    <h5>
+                        {{ pre.content }}
+                    </h5>
+                </div>
+            {% endfor %}
+
+
         </div>
-
-
-    </div>
     </div>
 {% endblock %}
 
