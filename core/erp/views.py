@@ -24,7 +24,7 @@ def Contacto(request):
         miFormu = FormularioContacto(request.POST)
         if miFormu.is_valid():
             infForm = miFormu.cleaned_data
-            send_mail(infForm['mail'],infForm['mensaje'],infForm.get("mail",""),['g.ohan3@hotmail.com'],)
+            send_mail(infForm['mail'],infForm['mensaje'],infForm.get("mail",""),['ernesto.alom@rolloseimpresiones.com'],)
             return render(request,"gracias.html")
     else:
         miFormu = FormularioContacto()
