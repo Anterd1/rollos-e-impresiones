@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
      <link href="{% static 'css/materialize.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
      <link href="{% static 'css/style.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <script src="https://kit.fontawesome.com/3d27220b44.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <nav class="white" role="navigation">
@@ -60,16 +61,9 @@
     <div class="parallax"><img width="35" src="{% static 'img/fondo1.jpg' %}" alt="Unsplashed background img 3" style="opacity: 1; transform: translate3d(-50%, 4.07998px, 0px);"></div>
 </div>
 <div class="fixed-action-btn">
-    <a class="btn modal-trigger btn-floating btn-large blue" href="#modal1"><i class="large material-icons">phone</i></a>
+    <a class="btn modal-trigger btn-floating btn-large green" href="https://wa.me/message/IFVIHLBP47AZH1"><i class="fab fa-whatsapp"></i></a>
 </div>
-<div id="modal1" class="modal">
-    <div class="modal-content">
-        {% include 'correo.html' %}
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-red btn-flat">Aceptar</a>
-    </div>
-  </div>
+
 <footer class="page-footer orange darken-4">
     <div class="container">
         <div class="row">
@@ -100,6 +94,8 @@
 <script src="{% static 'js/init.js' %}"></script>
 <div class="sidenav-overlay"></div>
 <div class="drag-target"></div>
+
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script>
