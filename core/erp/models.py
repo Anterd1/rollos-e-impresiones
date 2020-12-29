@@ -10,7 +10,7 @@ class Servicio(models.Model):
     content = models.TextField( )
     image = models.ImageField(upload_to='servicios')
     created = models.DateField(auto_now_add=True)
-    updated =  models.DateField(auto_now_add=True)
+    updated = models.DateField(auto_now_add=True)
 
     class Meta:
         verbose_name = 'servicio'
@@ -34,12 +34,13 @@ class Blog(models.Model):
     def __str__(self):
         return self.title_post
 
+
 class Presentacion(models.Model):
     title = models.CharField(max_length=150)
     content = models.TextField()
 
     class Meta:
-        verbose_name= 'presentacion'
+        verbose_name = 'presentacion'
 
     def __str__(self):
         return self.title
